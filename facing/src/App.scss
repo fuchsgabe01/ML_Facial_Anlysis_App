@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(227, 227, 227);
+}
+
+.header {
+  padding: 30pt 20% 0;
+  font-size: 50pt;
+  color: rgb(14, 14, 14);
+  font-family: "Bahnschrift SemiBold", monospace;
+}
+
+.instructions {
+  padding: 0% 0% 1% 20%;
+  font-family: "Verdana", monospace;
+  font-size: 12pt;
+}
+
+.input {
+  padding: 0 20%;
+  font-family: "Verdana", monospace;
+  font-size: 12pt;
+}
+
+.result {
+  font-family: "Verdana", monospace;
+  display: flex;
+  padding: 30pt 0 0 20%;
+
+  img {
+    width: 25%;
+    border: 2px solid #000000;
+  }
+
+  .answer {
+    margin: 0 0 0 2.5%;
+    padding: 0 0 0 2.5%;
+    width: 50.5%;
+
+    .first_ans {
+      display: flex;
+      .lab {
+        margin: 0 0 1.5% 0;
+        font-size: 20pt;
+        font-family: "Bahnschrift SemiBold", monospace;
+      }
+      .ans {
+        margin: 0;
+        padding: 0 0 0 2%;
+        font-size: 19pt;
+        font-family: "Verdana", monospace;
+        color: #584db6;
+      }
+    }
+    .head_soft {
+      padding-top: 2%;
+      font-family: "Bahnschrift SemiBold", monospace;
+      font-size: 20pt;
+      color: rgb(0, 0, 0);
+    }
+    .soft_ans {
+      display: flex;
+      padding-left: 4%;
+      .soft_lab {
+        margin: 0 0 1.5% 0;
+        font-size: 18pt;
+        font-family: "Bahnschrift SemiBold", monospace;
+      }
+      .soft_ans {
+        margin: 0;
+        padding: 0 0 0 2%;
+        font-size: 15pt;
+        font-family: "Verdana", monospace;
+        color: #584db6;
+      }
+    }
+  }
+}
