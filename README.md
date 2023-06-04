@@ -1,1 +1,5 @@
 # FacialAnalysisWebApp
+
+I created a webapp that when the user uploads and submits a picture of a face, they are returned with the emotion found in that face. They also can see the top three most likely emotions, from the results of the model in the form of a SoftMax. The model was trained on a 48-by-48-pixel dataset found on Kaggle using PyTorch. I played around with the model design and concluded that 3 convolutional layers into a linear layer seemed to maximize the validation set. I wanted to focus on the emotion detection model, so I abstracted the face detection for bounding boxes to a commonly used haar cascade model I have worked with in the past. The model I designed is small scale and the web app does not save any data aside from the last submitted image for viewing purposes (it is deleted on the next submission.)
+
+The app was deployed using AWS LightSail containers so the web app can be a bit slow at times and doesn’t handle overload well. However, it works for demonstration purposes and a more accurate experience can be obtained from running the app locally acquired from my GitHub.
